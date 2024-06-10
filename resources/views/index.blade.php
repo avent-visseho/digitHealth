@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | Minia - Minimal Admin & Dashboard Template</title>
+    <title>Dashboard | DigitHealth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -47,7 +47,7 @@
                             </span>
                             <span class="logo-lg">
                                 <img src="{{asset('src/assets/images/logo-sm.svg')}}" alt="" height="24"> <span
-                                    class="logo-txt">Minia</span>
+                                    class="logo-txt">DigitHealth</span>
                             </span>
                         </a>
 
@@ -57,7 +57,7 @@
                             </span>
                             <span class="logo-lg">
                                 <img src="{{asset('dist/assets/images/logo-sm.svg')}}" alt="" height="24"> <span
-                                    class="logo-txt">Minia</span>
+                                    class="logo-txt">DigitHealth</span>
                             </span>
                         </a>
                     </div>
@@ -2379,7 +2379,7 @@
                         <div class="col-sm-6">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> © Minia.
+                            </script> © DigitHealth.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">

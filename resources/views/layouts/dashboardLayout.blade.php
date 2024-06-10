@@ -25,6 +25,15 @@
     <link href="{{ asset('dist/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="{{ asset('dist/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+
+    {{-- calendar --}}
+    <link href="{{ asset('dist/assets/libs/@fullcalendar/core/main.min.css') }}"  rel="stylesheet" type="text/css" />
+    <link href="{{ asset('dist/assets/libs/@fullcalendar/daygrid/main.min.css') }}"  rel="stylesheet" type="text/css" />
+    <link href="{{ asset('dist/assets/libs/@fullcalendar/bootstrap/main.min.css') }}"  rel="stylesheet" type="text/css" />
+    <link href="{{ asset('dist/assets/libs/@fullcalendar/timegrid/main.min.css') }}"  rel="stylesheet" type="text/css" />
+    <link href="{{ asset('dist/assets/libs/@fullcalendar/timegrid/main.min.css') }}"  rel="stylesheet" type="text/css" />
+
+    
 </head>
 
 <body>
@@ -55,7 +64,7 @@
                                 {{-- <img src="{{ asset('src/assets/images/logo-sm.svg') }}" alt="" height="24"> --}}
                             </span>
                             <span class="logo-lg">
-                                <img src="{{ asset('dist/assets/images/logo-sm.svg') }}" alt="" height="24">
+                                {{-- <img src="{{ asset('dist/assets/images/logo-sm.svg') }}" alt="" height="24"> --}}
                                 <span class="logo-txt">DigitHealth</span>
                             </span>
                         </a>
@@ -77,7 +86,7 @@
 
                 <div class="d-flex">
 
-                    <div class="dropdown d-inline-block d-lg-none ms-2">
+                  {{--   <div class="dropdown d-inline-block d-lg-none ms-2">
                         <button type="button" class="btn header-item" id="page-header-search-dropdown"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i data-feather="search" class="icon-lg"></i>
@@ -97,46 +106,46 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> --}}
 
-                    <div class="dropdown d-none d-sm-inline-block">
-                        <button type="button" class="btn header-item" data-bs-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            <img id="header-lang-img" src="assets/images/flags/us.jpg" alt="Header Language"
-                                height="16">
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-end">
+                    {{--    <div class="dropdown d-none d-sm-inline-block">
+                            <button type="button" class="btn header-item" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <img id="header-lang-img" src="{{asset('dist/assets/images/flags/us.jpg')}}" alt="Header Language"
+                                    height="16">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
 
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="en">
-                                <img src="assets/images/flags/us.jpg" alt="user-image" class="me-1" height="12">
-                                <span class="align-middle">English</span>
-                            </a>
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp">
-                                <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1"
-                                    height="12"> <span class="align-middle">Spanish</span>
-                            </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="en">
+                                    <img src="{{asset('dist/assets/images/flags/us.jpg')}}" alt="user-image" class="me-1" height="12">
+                                    <span class="align-middle">English</span>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp">
+                                    <img src="{{asset('dist/assets/images/flags/spain.jpg')}}" alt="user-image" class="me-1"
+                                        height="12"> <span class="align-middle">Spanish</span>
+                                </a>
 
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr">
-                                <img src="assets/images/flags/germany.jpg" alt="user-image" class="me-1"
-                                    height="12"> <span class="align-middle">German</span>
-                            </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr">
+                                    <img src="{{asset('dist/assets/images/flags/germany.jpg')}}" alt="user-image" class="me-1"
+                                        height="12"> <span class="align-middle">German</span>
+                                </a>
 
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it">
-                                <img src="assets/images/flags/italy.jpg" alt="user-image" class="me-1"
-                                    height="12"> <span class="align-middle">Italian</span>
-                            </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it">
+                                    <img src="{{asset('dist/assets/images/flags/italy.jpg')}}" alt="user-image" class="me-1"
+                                        height="12"> <span class="align-middle">Italian</span>
+                                </a>
 
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
-                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1"
-                                    height="12"> <span class="align-middle">Russian</span>
-                            </a>
-                        </div>
-                    </div>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
+                                    <img src="{{asset('dist/assets/images/flags/russia.jpg')}}" alt="user-image" class="me-1"
+                                        height="12"> <span class="align-middle">Russian</span>
+                                </a>
+                            </div>
+                        </div> --}}
 
                     <div class="dropdown d-none d-sm-inline-block">
                         <button type="button" class="btn header-item" id="mode-setting-btn">
@@ -145,7 +154,7 @@
                         </button>
                     </div>
 
-                    <div class="dropdown d-none d-lg-inline-block ms-1">
+                  {{--   <div class="dropdown d-none d-lg-inline-block ms-1">
                         <button type="button" class="btn header-item" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <i data-feather="grid" class="icon-lg"></i>
@@ -155,19 +164,19 @@
                                 <div class="row g-0">
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/github.png" alt="Github">
+                                            <img src="{{asset('dist/assets/images/brands/github.png')}}" alt="Github">
                                             <span>GitHub</span>
                                         </a>
                                     </div>
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
+                                            <img src="{{asset('dist/assets/images/brands/bitbucket.png')}}" alt="bitbucket">
                                             <span>Bitbucket</span>
                                         </a>
                                     </div>
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/dribbble.png" alt="dribbble">
+                                            <img src="{{asset('dist/assets/images/brands/dribbble.png')}}" alt="dribbble">
                                             <span>Dribbble</span>
                                         </a>
                                     </div>
@@ -176,33 +185,33 @@
                                 <div class="row g-0">
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/dropbox.png" alt="dropbox">
+                                            <img src="{{asset('dist/assets/images/brands/dropbox.png')}}" alt="dropbox">
                                             <span>Dropbox</span>
                                         </a>
                                     </div>
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/mail_chimp.png" alt="mail_chimp">
+                                            <img src="{{asset('dist/assets/images/brands/mail_chimp.png')}}" alt="mail_chimp">
                                             <span>Mail Chimp</span>
                                         </a>
                                     </div>
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/slack.png" alt="slack">
+                                            <img src="{{asset('dist/assets/images/brands/slack.png')}}" alt="slack">
                                             <span>Slack</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item noti-icon position-relative"
                             id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             <i data-feather="bell" class="icon-lg"></i>
-                            <span class="badge bg-danger rounded-pill">5</span>
+                            <span class="badge bg-danger rounded-pill">0</span>
                         </button>
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
                             aria-labelledby="page-header-notifications-dropdown">
@@ -217,11 +226,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div data-simplebar style="max-height: 230px;">
+                           {{--  <div data-simplebar style="max-height: 230px;">
                                 <a href="#!" class="text-reset notification-item">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0 me-3">
-                                            <img src="assets/images/users/avatar-3.jpg"
+                                            <img src="{{asset('dist/assets/images/users/avatar-3.jpg')}}"
                                                 class="rounded-circle avatar-sm" alt="user-pic">
                                         </div>
                                         <div class="flex-grow-1">
@@ -272,7 +281,7 @@
                                 <a href="#!" class="text-reset notification-item">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0 me-3">
-                                            <img src="assets/images/users/avatar-6.jpg"
+                                            <img src="{{asset('dist/assets/images/users/avatar-6.jpg')}}"
                                                 class="rounded-circle avatar-sm" alt="user-pic">
                                         </div>
                                         <div class="flex-grow-1">
@@ -291,7 +300,7 @@
                                 <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
                                     <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span>
                                 </a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
 
@@ -305,7 +314,7 @@
                         <button type="button" class="btn header-item bg-soft-light border-start border-end"
                             id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                            <img class="rounded-circle header-profile-user" src="{{asset('dist/assets/images/users/avatar-1.jpg')}}"
                                 alt="Header Avatar">
                             <span class="d-none d-xl-inline-block ms-1 fw-medium">{{ Auth::user()->name }}</span>
                             <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
@@ -346,7 +355,7 @@
                         <li class="menu-title" data-key="t-menu">Menu</li>
 
                         <li>
-                            <a href="index.html">
+                            <a href="{{route('dashboard')}}">
                                 <i data-feather="home"></i>
                                 <span data-key="t-dashboard">Dashboard</span>
                             </a>
@@ -359,7 +368,7 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li>
-                                    <a href="apps-calendar.html">
+                                    <a href="{{ route('dashboard.calendar') }}">
                                         <span data-key="t-calendar">Calendrier</span>
                                     </a>
                                 </li>
@@ -417,7 +426,8 @@
 
 
     <!-- Right Sidebar -->
-  {{--  <div class="right-bar">
+   <div class="right-bar">
+    
         <div data-simplebar class="h-100">
             <div class="rightbar-title d-flex align-items-center p-3">
 
@@ -550,7 +560,7 @@
             </div>
 
         </div> <!-- end slimscroll-menu-->
-    </div>  --}}
+    </div> 
     <!-- /Right-bar -->
 
     <!-- Right bar overlay-->
@@ -578,6 +588,21 @@
     <script src="{{ asset('dist/assets/js/pages/dashboard.init.js') }}"></script>
 
     <script src="{{ asset('dist/assets/js/app.js') }}"></script>
+
+
+
+
+
+
+    <script src="{{asset('dist/assets/libs/@fullcalendar/core/main.min.js')}}"></script>
+    <script src="{{asset('dist/assets/libs/@fullcalendar/bootstrap/main.min.js')}}"></script>
+    <script src="{{asset('dist/assets/libs/@fullcalendar/daygrid/main.min.js')}}"></script>
+    <script src="{{asset('dist/assets/libs/@fullcalendar/timegrid/main.min.js')}}"></script>
+    <script src="{{asset('dist/assets/libs/@fullcalendar/interaction/main.min.js')}}"></script>
+
+    <!-- Calendar init -->
+    <script src="{{asset('dist/assets/js/pages/calendar.init.js')}}"></script>
+
 
 </body>
 

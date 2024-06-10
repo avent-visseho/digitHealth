@@ -27,6 +27,10 @@ Route::get('/dashboard/chatbot', function () {
     return view('chat/chatbot');
 })->middleware(['auth', 'verified'])->name('dashboard.discussion');
 
+Route::get('/dashboard/calendar', function () {
+    return view('calendar/calendar');
+})->middleware(['auth', 'verified'])->name('dashboard.calendar');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

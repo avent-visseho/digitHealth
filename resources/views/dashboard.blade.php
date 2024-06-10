@@ -148,7 +148,7 @@
                     </div><!-- end col -->
                 </div><!-- end row-->
 
-                <div class="row">
+               {{--  <div class="row">
                     <div class="col-xl-5">
                         <!-- card -->
                         <div class="card card-h-100">
@@ -1733,7 +1733,7 @@
                         <!-- end card -->
                     </div>
                     <!-- end col -->
-                </div><!-- end row -->
+                </div> --}}<!-- end row -->
             </div>
             <!-- container-fluid -->
         </div>
@@ -1742,16 +1742,13 @@
 
         <footer class="footer">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <script>
-                            document.write(new Date().getFullYear())
-                        </script> © Minia.
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="text-sm-end d-none d-sm-block">
-                            Design & Develop by <a href="#!" class="text-decoration-underline">Themesbrand</a>
-                        </div>
+                <div class="container-fluid">
+                    <div class="mt-4 mt-md-5 text-center">
+                        <p class="mb-0">©
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> DigitHealth<i class="mdi mdi-heart text-danger"></i>
+                        </p>
                     </div>
                 </div>
             </div>
