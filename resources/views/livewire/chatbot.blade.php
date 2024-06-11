@@ -8,11 +8,11 @@
                 @if ($chat['user'] === 'ai')
                     <li>
                         <div class="conversation-list">
-                        <div class="ctext-wrap">
-                            <div class="ctext-wrap-content">
-                                <p class="mb-0">{{ $chat['response'] }}</p>
+                            <div class="ctext-wrap">
+                                <div class="ctext-wrap-content">
+                                    <p class="mb-0">{{ $chat['response'] }}</p>
+                                </div>
                             </div>
-                        </div>
                         </div>
 
                     </li>
